@@ -20,9 +20,9 @@ Will need to get the token and perform a 3Ds payment request
 **Step 4 GET the transaction status and display summary in the landing page.<br/>**
 The transaction status and order ID should be displayed in the success page ( landing page). The transaction status should be as per the “approved” parameter in the GET payment details API call.
 
-![home](img/success.jpg)
+![home](img/Success.jpg)
 
 **After this we can go in the admin and can see the order information will the transaction ID and payment method.<br/><br/>**
 ![home](img/TransactionID.jpg)
-![home](img/Paymentinfo.jpg)
+![home](img/PaymentInfo.jpg)
 
