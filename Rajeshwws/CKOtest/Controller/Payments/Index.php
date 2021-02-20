@@ -70,9 +70,9 @@ class Index extends \Magento\Framework\App\Action\Action{
 	                $billingAddress->setSameAsBilling(1);
 	            }
 	        }
-			$quote->collectTotals()->save();
-            $this->_checkoutSession->setLastSuccessQuoteId($quote->getId());
-            $this->_quoteManagement->submit($quote);
+		$quote->collectTotals()->save();
+                $this->_checkoutSession->setLastSuccessQuoteId($quote->getId());
+                $this->_quoteManagement->submit($quote);
 
 		}
 		return $this;
@@ -102,7 +102,7 @@ class Index extends \Magento\Framework\App\Action\Action{
 			$response = $this->_ckoHelper->buildCurlRequest($headers,$data);
 			$this->_ckoHelper->logPaymentInfo($response);
 			if(is_array($response) && $response['_links']['redirect']['href']){
-				return $response['_links']['redirect']['href'];
+			     return $response['_links']['redirect']['href'];
 			}
 		}
 		return;
