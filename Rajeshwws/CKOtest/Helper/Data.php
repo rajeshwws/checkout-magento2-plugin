@@ -34,7 +34,7 @@ class Data extends \Magento\Framework\App\Helper\AbstractHelper
     protected $_jsonHelper;
 
 
-	public function __construct(
+    public function __construct(
         \Magento\Framework\App\Helper\Context $context,
         \Magento\Store\Model\StoreManagerInterface $storeManager,
         \Magento\Framework\App\Config\ScopeConfigInterface  $scopeConfigInterface,
