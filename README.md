@@ -2,7 +2,7 @@
 **Magento 2 plugin using the Checkout.com Unified API.<br/>**
 Please follow the below step to check this functionally and you can also watch a screen recording that shows the full payment flow<br/>
 Screen recording here:
-![home](img/Magento2Plugin.mp4)<br/><br/>
+![home](img/Magento2Plugin.mp4) ( attached video in email as well )<br/><br/>
 **Step 1 : Create the plugin files and the Magento admin config.<br/>**
 the path is : Stores->Configuration->Sales->Payment Methods - you can add the config setting here.
 
