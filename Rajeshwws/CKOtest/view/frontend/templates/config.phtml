@@ -1,0 +1,8 @@
+<?php
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$helper = $objectManager->create('Rajeshwws\CKOtest\Helper\Data');
+$config = $helper->getConfigData();
+?>
+<script type="text/javascript">
+	var ckoPayment = <?php echo json_encode($config);?>;
+</script>
