@@ -12,9 +12,9 @@ namespace Rajeshwws\CKOtest\Controller\Payments;
 
 class Index extends \Magento\Framework\App\Action\Action{
 
-	const METHOD_CODE = 'ckotest';
+    const METHOD_CODE = 'ckotest';
 
-	protected $_pageFactory;
+    rotected $_pageFactory;
     protected $_checkoutSession;
     protected $_quoteManagement;
     protected $_ckoHelper;
@@ -22,15 +22,15 @@ class Index extends \Magento\Framework\App\Action\Action{
 	public function __construct(
 		\Magento\Framework\App\Action\Context $context,
 		\Magento\Framework\View\Result\PageFactory $pageFactory,
-        \Magento\Checkout\Model\Session $checkoutSession,
-        \Magento\Quote\Model\QuoteManagement $quoteManagement,
-        \Rajeshwws\CKOtest\Helper\Data $helper
+		\Magento\Checkout\Model\Session $checkoutSession,
+		\Magento\Quote\Model\QuoteManagement $quoteManagement,
+		\Rajeshwws\CKOtest\Helper\Data $helper
 	)
 	{
 		$this->_pageFactory   = $pageFactory;
 		$this->_checkoutSession = $checkoutSession;
-        $this->_quoteManagement = $quoteManagement;
-        $this->_ckoHelper = $helper;
+		$this->_quoteManagement = $quoteManagement;
+		$this->_ckoHelper = $helper;
 		return parent::__construct($context);
 	}
 
