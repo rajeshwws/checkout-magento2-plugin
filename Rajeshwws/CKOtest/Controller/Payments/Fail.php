@@ -1,4 +1,13 @@
 <?php
+/**
+ * checkout.com-magento2-plugin
+ *
+ * This Magento 2 extension enables to process payments with Checkout.com (https://api.sandbox.checkout.com/payment).
+ *
+ * @package checkout.com-magento2-plugin
+ * @author Rajesh Kumar (https://github.com/rajeshwws/)
+ *
+ */
 namespace Rajeshwws\CKOtest\Controller\Payments;
 
 class Fail extends \Magento\Framework\App\Action\Action{
@@ -14,7 +23,17 @@ class Fail extends \Magento\Framework\App\Action\Action{
 
 	public function execute()
 	{
-		//redirect to display failure
+        // Log the payment error
+
+        // Handle the failed order
+
+        // Restore the quote
+
+        // Display the message - (The transaction could not be processed.)
+
+        // Return to the cart if the failureUrl set then we will response failureUrl url to return cart
+
+         return $this->_redirect('checkout/cart', ['_secure' => true]);
 	}
 
 }

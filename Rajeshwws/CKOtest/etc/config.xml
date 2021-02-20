@@ -1,4 +1,15 @@
 <?xml version="1.0"?>
+<!--
+    /**
+    * checkout.com-magento2-plugin
+    *
+    * This Magento 2 extension enables to process payments with Checkout.com (https://api.sandbox.checkout.com/payment).
+    *
+    * @package checkout.com-magento2-plugin
+    * @author Rajesh Kumar (https://github.com/rajeshwws/)
+    *
+    */
+  -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
         <payment>
